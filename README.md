@@ -62,11 +62,6 @@ yt-adblocker/
 
 ---
 
-## 📸 Screenshots
-*(Add your own screenshots here – before & after blocking YouTube ads)*  
-
----
-
 ## ⚠️ Limitations
 - ❌ Not supported on **Chrome Mobile** (Google blocks extensions there).  
 - 🔄 YouTube frequently updates its ad system → extension may need updates.  
