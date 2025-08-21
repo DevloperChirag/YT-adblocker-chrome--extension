@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Simple YouTube Ad Blocker",
+  "version": "1.0",
+  "description": "Basic ad blocker that skips YouTube ads",
+  "permissions": ["scripting", "declarativeNetRequest"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "action": {
+    "default_title": "YouTube Ad Blocker"
+  }
+}
